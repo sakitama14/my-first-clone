@@ -7,8 +7,8 @@
     
     <title>08index.html</title>
     
-    <link rel="stylesheet" href="../CSS/08style.css"> 
-    <link rel="stylesheet" href="../CSS/01sanitize.css">
+    <link rel="stylesheet" href="./08style.css"> 
+    <link rel="stylesheet" href="./01sanitize.css">
 </head>
 <body>
     <header id="header">
@@ -21,7 +21,7 @@
                 <li><a href="#contact">Contact</a></li>
                 <li>
                   <a href="https://www.instagram.com/" target="_blank">
-                    <img class="icon" src="../picture/instagram_f_icon-icons.com_65485.png" alt="インスタグラム">
+                    <img class="icon" src="../portfolio/picture/instagram_f_icon-icons.com_65485.png" alt="インスタグラム">
                   </a>
                 </li>
             </ul>
@@ -31,7 +31,7 @@
      <main>
          <div id="main-pic">
              <a>
-                 <img class="mainpic" src="../picture/for 08index.jpeg" alt="メインピクチャー">   
+                 <img class="mainpic" src="../portfolio/picture/for 08index.jpeg" alt="メインピクチャー">   
              </a>
          </div>
          <div id="about">
@@ -64,12 +64,12 @@
         <section id="works" class="wrapper">
             <h2 id="works-pics" class="works-title">Works</h2>
             <ul>
-                <li><img src="../pic for 08index.jpeg" alt="画像1"></li>
-                <li><img src="../pic for 08index 2.png" alt="画像2"></li>
-                <li><img src="../pic for 08index 3.jpeg" alt="画像3"></li>
-                <li><img src="../pic for 08index 4.jpeg" alt="画像4"></li>
-                <li><img src="../pic for 08index 5.jpeg" alt="画像5"></li>
-                <li><img src="../pic for 08index 6.jpeg" alt="画像6"></li>
+                <li><img src="../portfolio/picture/pic for 08index.jpeg" alt="画像1"></li>
+                <li><img src="../portfolio/picture/pic for 08index 2.png" alt="画像2"></li>
+                <li><img src="../portfolio/picture/pic for 08index 3.jpeg" alt="画像3"></li>
+                <li><img src="../portfolio/picture/pic for 08index 4.jpeg" alt="画像4"></li>
+                <li><img src="../portfolio/picture/pic for 08index 5.jpeg" alt="画像5"></li>
+                <li><img src="../portfolio/picture/pic for 08index 6.jpeg" alt="画像6"></li>
                 
             </ul>
         </section>
@@ -88,16 +88,19 @@
         </section>
 
         <section id="contact" class="wrapper">
-            <h2>Contact</h2>
-            
-        <form action="example.php" method="post" name="contact-form">
-             <p class="contact-contents">
-                 NAME: <input type="text" placeholder="苗字　名前"><br>
-                 EMAIL: <input type="text" placeholder="xxxxx.xxxxx@xxxx.xx"><br>
-                 MESSAGE:<textarea name="message" placeholder="メッセージを入力"></textarea>
-            </P>
-         </form>
-        </section>
+            <h2 class="sec-title">Contact</h2>
+            <form action="#" method="post">
+              <dl>
+                <dt><label for="name">NAME</label></dt>
+                <dd><input type="text" id="name" name="your-name"></dd>
+                <dt><label for="email">E-mail</label></dt>
+                <dd><input type="email" id="email" name="your-email"></dd>
+                <dt><label for="message">MESSAGE</label></dt>
+                <dd><textarea id="message" name="your-message"></textarea></dd>
+              </dl>
+              <div class="button"><input type="submit" value="送信"></div>
+            </form>
+          </section>
      </main>
      <hr>
      <footer id="footer">
